@@ -1,0 +1,195 @@
+:root {
+    --scarlet: #FF2400;
+    --darkgray: #303338;
+  }
+  
+  body {
+    background-color: #b3b3b3;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .vertical-spacer {
+    height: 12vh;
+  }
+  
+  #header {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg,
+      var(--scarlet), #ff9280 15%, #7f7f7f 20%,   
+  var(--darkgray) 20%
+    );
+    position: fixed;
+    top: 0;
+  }
+  
+  #logo-name {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .spacer-div {
+    width: 25%
+  }
+  
+  #header-img {
+    width: 75px;
+    height: auto;
+  }
+  
+  h1 {
+    color: var(--scarlet);
+    padding-right: 20px;
+  }
+  
+  #nav-bar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-link {
+    color: white;
+    margin: 0 1rem;
+    padding: 3px 6px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .nav-link:hover {
+    background-color: var(--scarlet);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  
+  .shield-characteristics{ 
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+  }
+  
+  .introduction-paragraph {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
+  label {
+    font-size: 1.3rem;
+  }
+  
+  #email, #submit {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #email {
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--darkgray);
+    background-color: #7f7f7f;
+    color: white;
+  }
+  
+  #email::placeholder {
+    color: white;
+  }
+  
+  #submit {
+    width: 100px;
+    background-color: var(--scarlet);
+    color: white;
+    border: 0;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--darkgray);
+  }
+  
+  #demonstration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  .pricing-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .pricing-box {
+    border: 1px solid var(--darkgray);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #7f7f7f;
+  }
+  
+  .pricing-button {
+    background-color: #b3b3b3;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  
+  .pricing-button:hover {
+    background-color: var(--scarlet);
+  }
+  
+  @media (width <= 700px) {
+    #header-img {
+      width: 15%;
+      height: 15%;
+    }
+  
+    .shield-characteristics {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (width >= 700px) {
+    .spacer-div {
+      width: 35%;
+    }
+  }
+  
+  @media (width >= 1000px) {
+    .spacer-div {
+      width: 50%;
+    }
+  }
+  
+  footer {
+    background-color: var(--darkgray);
+    margin: 0;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--scarlet);
+    align-items: center;
+  }
